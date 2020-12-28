@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+USE ieee.std_logic_unsigned.ALL;
+entity RRTest is
+end entity RRTest;
+architecture tester of RRTest is
+component RoundRobinScheduler is 
+	port(
+	reset:in std_logic;
+	clock:in std_logic;
+	din1,din2,din3,din4:in std_logic_vector( 7 downto 0);
+	dout:out std_logic_vector( 7 downto 0));
+end component RoundRobinScheduler;
+for RR: RoundRobinScheduler use entity work.RoundRobinScheduler(behave);
+signal clock:std_logic:='1';
+signal din1,din2,din3,din4,dout: std_logic_vector( 7 downto 0);
+begin
+din1<=(others=>'0');
+din2<=din1+1;
+din3<=din2+1;
+din4<=din3+1;
+RR:RoundRobinScheduler port map('0',clock,din1,din2,din3,din4,dout);
+clk:process is
+begin
+wait for 10ns;
+if clock='0'then clock<='1';
+else clock<='0';
+end if;
+end process clk;
+end architecture tester;

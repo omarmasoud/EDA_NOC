@@ -1,0 +1,91 @@
+entity convEnc is 
+port(
+ck : in bit;
+reset: in bit;
+input: in bit;
+x: out bit;
+y: out bit
+);
+end convEnc;
+
+
+architecture Mealy of convEnc is
+
+type STATE_TYPE IS (a,b,c,d);
+ATTRIBUTE enum_enconding: string;
+ATTRIBUTE enum_enconding OF STATE_TYPE: TYPE IS
+"00 01 10 11";
+
+signal NS,CS : STATE_TYPE;
+BEGIN 
+
+p1:process(CS, a, reset) 
+BEGIN
+
+if reset='1' then 
+NS<= a;
+
+else
+
+case CS is
+
+
+when a=>
+if (input='1')then
+x<='1';
+y<='1';
+NS<= b;
+else
+x<='0';
+y<='0';
+NS<=a;
+end if;
+
+when b=>
+if (input='1')then
+x<='0';
+y<='1';
+NS<=d;
+else
+x<='1';
+y<='0';
+NS<=c;
+end if;
+
+
+when c=>
+if (input='1')then
+x<='0';
+y<='0';
+NS<=b;
+else
+x<='1';
+y<='1';
+NS<=a;
+end if;
+
+
+when d=>
+if (input='1')then
+x<='1';
+y<='0';
+NS<=d;
+else
+x<='0';
+y<='1';
+NS<=c;
+end if;
+
+end case;
+end if;
+end process p1;
+
+process(ck)
+begin
+if(ck='1' And ck'event)then
+CS<=NS;
+end if;
+end process;
+
+
+end architecture Mealy;
