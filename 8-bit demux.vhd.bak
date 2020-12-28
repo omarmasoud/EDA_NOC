@@ -7,7 +7,7 @@ entity bit8demux is
 	d_out3:out std_logic_vector (7 downto 0);
 	d_out4:out std_logic_vector (7 downto 0);
 	sel:in std_logic_vector(1 downto 0);
-	En: in bit);
+	En: in std_logic);
 end entity bit8demux;
 architecture behaviour of bit8demux is
  

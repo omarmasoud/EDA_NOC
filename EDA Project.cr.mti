@@ -75,6 +75,20 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity Myregister
 -- Compiling architecture reg of Myregister
 
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity fifotest
+-- Compiling architecture testing of fifotest
+-- Loading entity fifo
+** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -87,16 +101,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling architecture tester of RRTest
 -- Loading entity RoundRobinScheduler
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-
-} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity bit8demux
--- Compiling architecture behaviour of bit8demux
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd(29): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
-
 
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -146,56 +150,31 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading entity Myregister
 -- Loading entity bit8demux
 -- Loading entity fifo
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(43): (vcom-1133) Type mismatch found on port "reset".
-
-   In the component "fifo", the port type is "ieee.std_logic_1164.STD_LOGIC".
-
-   In the entity "fifo", the port type is "std.STANDARD.BIT"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(43): (vcom-1133) Type mismatch found on port "rreq".
-
-   In the component "fifo", the port type is "ieee.std_logic_1164.STD_LOGIC".
-
-   In the entity "fifo", the port type is "std.STANDARD.BIT"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(43): (vcom-1133) Type mismatch found on port "wreq".
-
-   In the component "fifo", the port type is "ieee.std_logic_1164.STD_LOGIC".
-
-   In the entity "fifo", the port type is "std.STANDARD.BIT"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(43): (vcom-1133) Type mismatch found on port "empty".
-
-   In the component "fifo", the port type is "ieee.std_logic_1164.STD_LOGIC".
-
-   In the entity "fifo", the port type is "std.STANDARD.BIT"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(43): (vcom-1133) Type mismatch found on port "full".
-
-   In the component "fifo", the port type is "ieee.std_logic_1164.STD_LOGIC".
-
-   In the entity "fifo", the port type is "std.STANDARD.BIT"
-
 -- Loading entity RoundRobinScheduler
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(51): (vcom-1136) Unknown identifier "wclk".
+** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(62): (vcom-1035) Formal port "rreq" has OPEN or no actual associated with it.
 
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(51): (vcom-1136) Unknown identifier "rst".
+** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(62): (vcom-1035) Formal port "wreq" has OPEN or no actual associated with it.
 
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(52): (vcom-1136) Unknown identifier "wclk".
+** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(62): (vcom-1035) Formal port "datain" has OPEN or no actual associated with it.
 
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(52): (vcom-1136) Unknown identifier "rst".
+** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(44): (vcom-1263) Configuration specification "all : RoundRobinScheduler" applies to no component instantiation statements.
 
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(53): (vcom-1136) Unknown identifier "wclk".
+** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(65): VHDL Compiler exiting
 
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(53): (vcom-1136) Unknown identifier "rst".
+} {15.0 16.0 17.0 18.0 19.0 20.0 23.0 24.0} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity fifo
+-- Compiling architecture behave of fifo
+-- Loading entity FiFoController
+-- Loading entity BlockRam
 
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(54): (vcom-1136) Unknown identifier "wclk".
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(54): (vcom-1136) Unknown identifier "rst".
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd(60): near "end": syntax error
-
-} {14.0 15.0 20.0 21.0 26.0 27.0 32.0 33.0 38.0 39.0 45.0 46.0 47.0 48.0 49.0 50.0 51.0 52.0 53.0 54.0 55.0 56.0 57.0 58.0 59.0 60.0 61.0 62.0} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd}
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO

@@ -48,13 +48,18 @@ signal dem2o1,dem2o2,dem2o3,dem2o4:std_logic_vector(7 downto 0);
 signal dem3o1,dem3o2,dem3o3,dem3o4:std_logic_vector(7 downto 0);
 signal dem4o1,dem4o2,dem4o3,dem4o4:std_logic_vector(7 downto 0);
 begin
+--input buffers
 buff1: Myregister generic map(8) port map(datai1,wclk,buffo1,wr1,rst);
 buff2: Myregister generic map(8) port map(datai1,wclk,buffo2,wr1,rst);
 buff3: Myregister generic map(8) port map(datai1,wclk,buffo3,wr1,rst);
 buff4: Myregister generic map(8) port map(datai1,wclk,buffo4,wr1,rst);
+--switch fabrics;
 dem1:bit8demux port map(buffo1,dem1o1,dem1o2,dem1o3,dem1o4,buffo1(1 downto 0),wr1);
 dem2:bit8demux port map(buffo2,dem2o1,dem2o2,dem2o3,dem2o4,buffo2(1 downto 0),wr1);
 dem3:bit8demux port map(buffo3,dem3o1,dem3o2,dem3o3,dem3o4,buffo4(1 downto 0),wr1);
 dem4:bit8demux port map(buffo4,dem4o1,dem4o2,dem4o3,dem4o4,buffo4(1 downto 0),wr1);
+--fifos for output queueing
 fifo1:fifo port map(rst,rclk,wclk);
+--round robin schedulers for synchronizing output buffers with queues
+--output buffers
 end architecture behave;

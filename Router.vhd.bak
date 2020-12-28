@@ -56,5 +56,5 @@ dem1:bit8demux port map(buffo1,dem1o1,dem1o2,dem1o3,dem1o4,buffo1(1 downto 0),wr
 dem2:bit8demux port map(buffo2,dem2o1,dem2o2,dem2o3,dem2o4,buffo2(1 downto 0),wr1);
 dem3:bit8demux port map(buffo3,dem3o1,dem3o2,dem3o3,dem3o4,buffo4(1 downto 0),wr1);
 dem4:bit8demux port map(buffo4,dem4o1,dem4o2,dem4o3,dem4o4,buffo4(1 downto 0),wr1);
-fifo1:fifo port map(rst,rclk,wclk,
+fifo1:fifo port map(rst,rclk,wclk);
 end architecture behave;
