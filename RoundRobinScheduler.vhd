@@ -11,7 +11,7 @@ entity RoundRobinScheduler is
 end entity RoundRobinScheduler;
 architecture behave of RoundRobinScheduler is
 type SchedState is(s1,s2,s3,s4);
-signal CurrentState:SchedState:=s4;--let start from s4 so the first clock edge will make s1 happen and let din1 go to dout 
+signal CurrentState:SchedState:=s1;--let start from s4 so the first clock edge will make s1 happen and let din1 go to dout 
 signal NextState:SchedState;
 begin
 cs:process(clock,reset)is

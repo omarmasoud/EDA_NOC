@@ -9,8 +9,10 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity routertest
 -- Compiling architecture behave of routertest
 -- Loading entity Router
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(29): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015

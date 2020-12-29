@@ -67,7 +67,8 @@ signal ob1,ob2,ob3,ob4:std_logic_vector(7 downto 0);
 signal oe1,oe2,oe3,oe4:std_logic;
 --enum for scheduling states
 type schedulingstate is(s1,s2,s3,s4);
-signal currentSchedulingState,nextSchedulingState:schedulingstate;
+signal currentSchedulingState:schedulingstate:=s1;
+signal nextSchedulingState:schedulingstate;
 --read request signals
 signal rr1,rr2,rr3,rr4,rr5,rr6,rr7,rr8,rr9,rr10,rr11,rr12,rr13,rr14,rr15,rr16:std_logic;
 --write request signals
@@ -82,7 +83,7 @@ buff4: Myregister generic map(8) port map(datai4,wclk,buffo4,wr4,rst);
 --switch fabrics;
 dem1:bit8demux port map(buffo1,dem1o1,dem1o2,dem1o3,dem1o4,buffo1(1 downto 0),wr1);
 dem2:bit8demux port map(buffo2,dem2o1,dem2o2,dem2o3,dem2o4,buffo2(1 downto 0),wr1);
-dem3:bit8demux port map(buffo3,dem3o1,dem3o2,dem3o3,dem3o4,buffo4(1 downto 0),wr1);
+dem3:bit8demux port map(buffo3,dem3o1,dem3o2,dem3o3,dem3o4,buffo3(1 downto 0),wr1);
 dem4:bit8demux port map(buffo4,dem4o1,dem4o2,dem4o3,dem4o4,buffo4(1 downto 0),wr1);
 --read request signals assignment statements
 rr1<=(not em1) and rrsync(3);
@@ -169,9 +170,9 @@ currentSchedulingState<=nextSchedulingState;
 else null;
 end if;
 end process readSynchronizerCS;
-readSynchronizerNSandOP:process(currentSchedulingState,rclk) is
+readSynchronizerNSandOP:process(currentSchedulingState) is
 begin
-if rising_edge(rclk) then
+
 case currentSchedulingState is
 	when s1=> 
 		rrsync<="1000";
@@ -205,8 +206,7 @@ case currentSchedulingState is
 	when others=>
 		null;
 end case;
-else null; 
-end if;
+
 end process readSynchronizerNSandOP;
 writerequest1:process(datai1 (1 downto 0),wclk) is
 begin 

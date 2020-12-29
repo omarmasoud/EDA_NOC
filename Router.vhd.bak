@@ -67,7 +67,8 @@ signal ob1,ob2,ob3,ob4:std_logic_vector(7 downto 0);
 signal oe1,oe2,oe3,oe4:std_logic;
 --enum for scheduling states
 type schedulingstate is(s1,s2,s3,s4);
-signal currentSchedulingState,nextSchedulingState:schedulingstate;
+signal currentSchedulingState:schedulingstate:=s1;
+signal nextSchedulingState:schedulingstate;
 --read request signals
 signal rr1,rr2,rr3,rr4,rr5,rr6,rr7,rr8,rr9,rr10,rr11,rr12,rr13,rr14,rr15,rr16:std_logic;
 --write request signals
@@ -169,9 +170,9 @@ currentSchedulingState<=nextSchedulingState;
 else null;
 end if;
 end process readSynchronizerCS;
-readSynchronizerNSandOP:process(currentSchedulingState,rclk) is
+readSynchronizerNSandOP:process(currentSchedulingState) is
 begin
-ifrising_edge(rclk) then
+
 case currentSchedulingState is
 	when s1=> 
 		rrsync<="1000";
@@ -205,8 +206,7 @@ case currentSchedulingState is
 	when others=>
 		null;
 end case;
-else null; 
-end if;
+
 end process readSynchronizerNSandOP;
 writerequest1:process(datai1 (1 downto 0),wclk) is
 begin 
