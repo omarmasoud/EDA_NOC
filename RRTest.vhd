@@ -13,7 +13,7 @@ component RoundRobinScheduler is
 	dout:out std_logic_vector( 7 downto 0));
 end component RoundRobinScheduler;
 for RR: RoundRobinScheduler use entity work.RoundRobinScheduler(behave);
-signal clock:std_logic:='1';
+signal clock:std_logic:='0';
 signal din1,din2,din3,din4,dout: std_logic_vector( 7 downto 0);
 begin
 din1<=(others=>'0');

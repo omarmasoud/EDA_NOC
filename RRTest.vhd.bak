@@ -20,7 +20,7 @@ din1<=(others=>'0');
 din2<=din1+1;
 din3<=din2+1;
 din4<=din3+1;
-RR:RoundRobinScheduler port map(clock,din1,din2,din3,din4,dout);
+RR:RoundRobinScheduler port map('0',clock,din1,din2,din3,din4,dout);
 clk:process is
 begin
 wait for 10ns;
