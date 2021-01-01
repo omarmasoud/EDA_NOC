@@ -86,22 +86,22 @@ dem2:bit8demux port map(buffo2,dem2o1,dem2o2,dem2o3,dem2o4,buffo2(1 downto 0),wr
 dem3:bit8demux port map(buffo3,dem3o1,dem3o2,dem3o3,dem3o4,buffo3(1 downto 0),wr1);
 dem4:bit8demux port map(buffo4,dem4o1,dem4o2,dem4o3,dem4o4,buffo4(1 downto 0),wr1);
 --read request signals assignment statements
-rr1<=(not em1) and rrsync(3);
-rr2<=(not em2) and rrsync(2);
-rr3<=(not em3) and rrsync(1);
-rr4<=(not em4) and rrsync(0);
-rr5<=(not em5) and rrsync(3);
-rr6<=(not em6) and rrsync(2);
-rr7<=(not em7) and rrsync(1);
-rr8<=(not em8) and rrsync(0);
-rr9<=(not em9) and rrsync(3);
-rr10<=(not em10) and rrsync(2);
-rr11<=(not em11) and rrsync(1);
-rr12<=(not em12) and rrsync(0);
-rr13<=(not em13) and rrsync(3);
-rr14<=(not em14) and rrsync(2);
-rr15<=(not em15) and rrsync(1);
-rr16<=(not em16) and rrsync(0);
+rr1<=(not em1) and rrsync(2);
+rr2<=(not em2) and rrsync(1);
+rr3<=(not em3) and rrsync(0);
+rr4<=(not em4) and rrsync(3);
+rr5<=(not em5) and rrsync(2);
+rr6<=(not em6) and rrsync(1);
+rr7<=(not em7) and rrsync(0);
+rr8<=(not em8) and rrsync(3);
+rr9<=(not em9) and rrsync(2);
+rr10<=(not em10) and rrsync(1);
+rr11<=(not em11) and rrsync(0);
+rr12<=(not em12) and rrsync(3);
+rr13<=(not em13) and rrsync(2);
+rr14<=(not em14) and rrsync(1);
+rr15<=(not em15) and rrsync(0);
+rr16<=(not em16) and rrsync(3);
 --write request signal assignment statements
 wr_1<=( not fu1) and wrsync1(3);
 wr_2<=( not fu2 )and wrsync2(3);
