@@ -668,7 +668,7 @@ R111
 R14
 R15
 Erouter
-Z113 w1609286115
+Z113 w1609511178
 R1
 R2
 R3
@@ -683,9 +683,9 @@ VA0E:O5TZZF@lFS4C8zBfJ3
 !s100 6f_ckLYK_kIaQlzi94Q0F0
 R9
 32
-Z116 !s110 1609286119
+Z116 !s110 1609511255
 !i10b 1
-Z117 !s108 1609286119.000000
+Z117 !s108 1609511254.000000
 Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd|
 Z119 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd|
 !i113 1
@@ -704,8 +704,8 @@ R5
 Z120 DEx4 work 6 router 0 22 A0E:O5TZZF@lFS4C8zBfJ3
 l77
 L11
-VZJ9KiA`nKhi^:7U4CmdTi1
-!s100 DkB];2Q>EeWKDVb^1>]^o2
+VP<4YNS1S5;MTCBNmz<=7b3
+!s100 :Zg5XFSJ<=NH3?WSXX?zR1
 R9
 32
 R116
@@ -717,7 +717,7 @@ R119
 R14
 R15
 Eroutertest
-Z121 w1609504503
+Z121 w1609511381
 R1
 R2
 R3
@@ -732,9 +732,9 @@ V[6]8FZd2VZc@fR9@V:;fo3
 !s100 fEzUKX2QO4R>`UKHi35Ee1
 R9
 32
-Z124 !s110 1609504506
+Z124 !s110 1609511385
 !i10b 1
-Z125 !s108 1609504505.000000
+Z125 !s108 1609511385.000000
 Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd|
 Z127 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd|
 !i113 1
@@ -750,8 +750,8 @@ R5
 Z128 DEx4 work 10 routertest 0 22 [6]8FZd2VZc@fR9@V:;fo3
 l19
 L8
-VdnT[^6BdW`Bj>Sg`0Z;U00
-!s100 L2A1kd1KG<h3^k00Q1TY[2
+V0DZoobW6@Z[ad]Yk@EXD;0
+!s100 C=a>Y`C<cXlA;SY`AIjE51
 R9
 32
 R124

@@ -39,8 +39,8 @@ end if;
 end process c2;
 p1:process is
 begin
-rst<='1';
-wait for  2.286ns;
+--rst<='1';
+--wait for  2.286ns;
 rst<='0';
 di1<="00100000";
 di2<="00100001";
