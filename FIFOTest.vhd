@@ -12,7 +12,7 @@ port(reset:in std_logic;rclk,wclk:in std_logic;rreq,wreq:in std_logic;
 	datain:in std_logic_vector(7 downto 0);dataout:out std_logic_vector(7 downto 0);
 	empty,full:out std_logic);
 end component fifo;
-for myfifo:fifo use entity work.fifo(behave);
+for myfifo:fifo use entity work.fifo(Structural);
 signal rst,rclk,wclk,rreq,wreq:std_logic:='0';
 signal em,fu:std_logic;
 signal di,do:std_logic_vector(7 downto 0);

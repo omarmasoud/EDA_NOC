@@ -16,6 +16,7 @@ signal NextState:SchedState;
 begin
 cs:process(clock,reset)is
 begin
+--reset was added so when router resets we go to initial state
 if reset='1' then
  CurrentState<=s1;
 elsif rising_edge(clock) then

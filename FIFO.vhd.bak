@@ -24,7 +24,7 @@ end component BlockRam;
 
 for fcontroller:FiFoController use entity work.FiFoController(behave);
 for ram:BlockRam use entity work.BlockRam(behave);
-signal wv,rv,emp,fu:bit;
+signal wv,rv,emp,fu:std_logic;
 signal addresswrite,adressread:std_logic_vector(2 downto 0);
 signal output:std_logic_vector(7 downto 0);
 begin

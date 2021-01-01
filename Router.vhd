@@ -8,7 +8,7 @@ port(datai1,datai2,datai3,datai4:in std_logic_vector(7 downto 0);
 	datao1,datao2,datao3,datao4:out std_logic_vector(7 downto 0);
 	wr1,wr2,wr3,wr4,rst,wclk,rclk:in std_logic);
 end entity Router;
-architecture behave of Router is 
+architecture mixed of Router is 
 component Myregister is 
 	generic(n:natural:=8);
 	port(dataIn: in std_logic_vector(n-1 downto 0);
@@ -40,7 +40,7 @@ component bit8demux is
 end component bit8demux;
 for all:Myregister use entity work.Myregister(reg);
 for all:bit8demux use entity work.bit8demux(behaviour);
-for all: fifo use entity work.fifo(behave);
+for all: fifo use entity work.fifo(Structural);
 for all:RoundRobinScheduler use entity work.RoundRobinScheduler(behave);
 --signals for buffers outputs indexed
 signal buffo1,buffo2,buffo3,buffo4:std_logic_vector(7 downto 0);
@@ -280,4 +280,4 @@ end case;
 else null;
 end if;
 end process writerequest4;
-end architecture behave;
+end architecture mixed;

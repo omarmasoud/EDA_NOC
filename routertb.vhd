@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -15,7 +14,7 @@ signal di1,di2,di3,di4,do1,do2,do3,do4:std_logic_vector(7 downto 0);
 signal w1,w2,w3,w4:std_logic:='1';
 signal rst:std_logic;
 signal wclk,rclk:std_logic:='0';
-for rout:Router use entity work.Router(behave);
+for rout:Router use entity work.Router(mixed);
 begin
 rout:Router port map(di1,di2,di3,di4,do1,do2,do3,do4,w1,w2,w3,w4,rst,wclk,rclk);
 

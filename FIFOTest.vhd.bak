@@ -17,7 +17,7 @@ signal rst,rclk,wclk,rreq,wreq:std_logic:='0';
 signal em,fu:std_logic;
 signal di,do:std_logic_vector(7 downto 0);
 begin
-myfifo:fifo port map(rst,rclk,wclk,rreq,wreq,di,do,em.fu);
+myfifo:fifo port map (rst,rclk,wclk,rreq,wreq,di,do,em,fu);
 c1:process is
 begin
 wait for 20ns;

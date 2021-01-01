@@ -8,7 +8,7 @@ port(datai1,datai2,datai3,datai4:in std_logic_vector(7 downto 0);
 	datao1,datao2,datao3,datao4:out std_logic_vector(7 downto 0);
 	wr1,wr2,wr3,wr4,rst,wclk,rclk:in std_logic);
 end entity Router;
-architecture behave of Router is 
+architecture mixed of Router is 
 component Myregister is 
 	generic(n:natural:=8);
 	port(dataIn: in std_logic_vector(n-1 downto 0);
@@ -177,32 +177,32 @@ case currentSchedulingState is
 	when s1=> 
 		rrsync<="1000";
 		nextSchedulingState<=s2;
-		oe1<=not em4;
-		oe2<=not em8;
-		oe3<=not em12;
-		oe4<=not em16;
-	when s2=> 	
-		rrsync<="0100";
-		nextSchedulingState<=s3;
 		oe1<=not em1;
 		oe2<=not em5;
 		oe3<=not em9;
 		oe4<=not em13;
-
-	when s3=> 
-		rrsync<="0010";
-		nextSchedulingState<=s4;
+	when s2=> 	
+		rrsync<="0100";
+		nextSchedulingState<=s3;
 		oe1<=not em2;
 		oe2<=not em6;
 		oe3<=not em10;
 		oe4<=not em14;
-	when s4=> 
-		rrsync<="0001";
-		nextSchedulingState<=s1;
+
+	when s3=> 
+		rrsync<="0010";
+		nextSchedulingState<=s4;
 		oe1<=not em3;
 		oe2<=not em7;
 		oe3<=not em11;
 		oe4<=not em15;
+	when s4=> 
+		rrsync<="0001";
+		nextSchedulingState<=s1;
+		oe1<=not em4;
+		oe2<=not em8;
+		oe3<=not em12;
+		oe4<=not em16;
 	when others=>
 		null;
 end case;
@@ -280,4 +280,4 @@ end case;
 else null;
 end if;
 end process writerequest4;
-end architecture behave;
+end architecture mixed;
