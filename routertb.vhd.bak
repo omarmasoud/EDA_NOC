@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -45,7 +44,7 @@ rst<='0';
 di1<="00100000";
 di2<="00100001";
 di3<="10100010";
---di4<="01010001";
+di4<="01010011";
 w1<='1';
 w2<='1';
 w3<='1';

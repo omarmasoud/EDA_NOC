@@ -32,7 +32,7 @@ signal rptr:std_logic_vector(2 downto 0);
 signal wptr:std_logic_vector(2 downto 0);
 signal rptrcount:std_logic_vector(2 downto 0);
 signal wptrcount:std_logic_vector(2 downto 0);
-signal em,fu:bit;
+signal em,fu:std_logic;
 begin
 rd_ptr<=rptr;
 wr_ptr<=wptr;
@@ -48,7 +48,7 @@ begin
 if wptr+1=rptr then
 	fu<='1';
 	em<='0';
-elsif rptr=wptr then
+elsif rptr-1=wptr then
 em<='1';
 fu<='0';
 else 
