@@ -37,7 +37,7 @@ component bit8demux is
 	sel:in std_logic_vector(1 downto 0);
 	En: in std_logic);
 end component bit8demux;
-for all:Myregister use entity work.Myregister(reg);
+for all:Myregister use entity work.Myregister(behave);
 for all:bit8demux use entity work.bit8demux(behaviour);
 for all: fifo use entity work.fifo(Structural);
 for all:RoundRobinScheduler use entity work.RoundRobinScheduler(moorefsm);

@@ -9,7 +9,7 @@ entity Myregister is
 	clock_en:in std_logic;
 	reset:in std_logic);
 end entity Myregister;
-architecture reg of Myregister is
+architecture behave of Myregister is
 signal temp:std_logic_vector(n-1 downto 0);
 begin
 p1:process(clock,reset)
@@ -21,4 +21,4 @@ p1:process(clock,reset)
 	end if; 
 end process p1;
 dataOut<=temp;
-end architecture reg;
+end architecture behave;

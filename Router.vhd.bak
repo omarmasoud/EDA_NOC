@@ -40,7 +40,7 @@ end component bit8demux;
 for all:Myregister use entity work.Myregister(reg);
 for all:bit8demux use entity work.bit8demux(behaviour);
 for all: fifo use entity work.fifo(Structural);
-for all:RoundRobinScheduler use entity work.RoundRobinScheduler(behave);
+for all:RoundRobinScheduler use entity work.RoundRobinScheduler(moorefsm);
 --signals for buffers outputs indexed
 signal buffo1,buffo2,buffo3,buffo4:std_logic_vector(7 downto 0);
 --signals for switch fabric outputs indexed by output and switch number

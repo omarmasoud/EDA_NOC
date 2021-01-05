@@ -104,7 +104,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity Myregister
--- Compiling architecture reg of Myregister
+-- Compiling architecture behave of Myregister
 
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
