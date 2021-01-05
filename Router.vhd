@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -41,7 +40,7 @@ end component bit8demux;
 for all:Myregister use entity work.Myregister(reg);
 for all:bit8demux use entity work.bit8demux(behaviour);
 for all: fifo use entity work.fifo(Structural);
-for all:RoundRobinScheduler use entity work.RoundRobinScheduler(behave);
+for all:RoundRobinScheduler use entity work.RoundRobinScheduler(moorefsm);
 --signals for buffers outputs indexed
 signal buffo1,buffo2,buffo3,buffo4:std_logic_vector(7 downto 0);
 --signals for switch fabric outputs indexed by output and switch number
@@ -61,9 +60,6 @@ signal wrsync1,wrsync2,wrsync3,wrsync4:std_logic_vector(3 downto 0);
 signal fo1,fo2,fo3,fo4,fo5,fo6,fo7,fo8,fo9,fo10,fo11,fo12,fo13,fo14,fo15,fo16:std_logic_vector(7 downto 0);
 --round robin outputs
 signal rro1,rro2,rro3,rro4:std_logic_vector(7 downto 0);
---output buffers output signals
-signal ob1,ob2,ob3,ob4:std_logic_vector(7 downto 0);
-
 --enum for scheduling states
 type schedulingstate is(s1,s2,s3,s4);
 signal currentSchedulingState:schedulingstate:=s3;
@@ -85,22 +81,22 @@ dem2:bit8demux port map(buffo2,dem2o1,dem2o2,dem2o3,dem2o4,buffo2(1 downto 0),wr
 dem3:bit8demux port map(buffo3,dem3o1,dem3o2,dem3o3,dem3o4,buffo3(1 downto 0),wr1);
 dem4:bit8demux port map(buffo4,dem4o1,dem4o2,dem4o3,dem4o4,buffo4(1 downto 0),wr1);
 --read request signals assignment statements
-rr1<=(not em1) and rrsync(3);
-rr2<=(not em2) and rrsync(2);
-rr3<=(not em3) and rrsync(1);
-rr4<=(not em4) and rrsync(0);
-rr5<=(not em5) and rrsync(3);
-rr6<=(not em6) and rrsync(2);
-rr7<=(not em7) and rrsync(1);
-rr8<=(not em8) and rrsync(0);
-rr9<=(not em9) and rrsync(3);
-rr10<=(not em10) and rrsync(2);
-rr11<=(not em11) and rrsync(1);
-rr12<=(not em12) and rrsync(0);
-rr13<=(not em13) and rrsync(3);
-rr14<=(not em14) and rrsync(2);
-rr15<=(not em15) and rrsync(1);
-rr16<=(not em16) and rrsync(0);
+rr1<=(not em1) and rrsync(2);
+rr2<=(not em2) and rrsync(1);
+rr3<=(not em3) and rrsync(0);
+rr4<=(not em4) and rrsync(3);
+rr5<=(not em5) and rrsync(2);
+rr6<=(not em6) and rrsync(1);
+rr7<=(not em7) and rrsync(0);
+rr8<=(not em8) and rrsync(3);
+rr9<=(not em9) and rrsync(2);
+rr10<=(not em10) and rrsync(1);
+rr11<=(not em11) and rrsync(0);
+rr12<=(not em12) and rrsync(2);
+rr13<=(not em13) and rrsync(1);
+rr14<=(not em14) and rrsync(1);
+rr15<=(not em15) and rrsync(0);
+rr16<=(not em16) and rrsync(3);
 --write request signal assignment statements
 wr_1<=( not fu1) and wrsync1(3);
 wr_2<=( not fu2 )and wrsync2(3);
@@ -124,9 +120,7 @@ wr_16<= (not fu16) and wrsync4(0);
 	--datain:in std_logic_vector(7 downto 0);dataout:out std_logic_vector(7 downto 0);
 	--empty,full:out std_logic);
 --end component fifo;
-
 --fifos for output queueing
-
 fifo1:fifo port map(rst,rclk,wclk,rr1,wr_1,dem1o1,fo1,em1,fu1);
 fifo2:fifo port map(rst,rclk,wclk,rr2,wr_2,dem2o1,fo2,em2,fu2);
 fifo3:fifo port map(rst,rclk,wclk,rr3,wr_3,dem3o1,fo3,em3,fu3);
@@ -189,9 +183,9 @@ end case;
 
 end process readSynchronizerNSandOP;
 --write request synchronization for input buffer1
-writerequest1:process(datai1 (1 downto 0),wclk) is
+writerequest1:process(datai1 (1 downto 0),wclk,wr1) is
 begin 
-if rising_edge(wclk) then
+if (rising_edge(wclk)and wr1='1') then
 case datai1 (1 downto 0) is
 	when "00"=>
 		wrsync1<="1000";
@@ -207,9 +201,9 @@ else null;
 end if;
 end process writerequest1;
 --write request synchronization for input buffer2
-writerequest2:process(datai2 (1 downto 0),wclk) is
+writerequest2:process(datai2 (1 downto 0),wclk,wr2) is
 begin 
-if rising_edge(wclk) then
+if (rising_edge(wclk) and wr2='1' )then
 case datai2 (1 downto 0) is
 	when "00"=>
 		wrsync2<="1000";
@@ -225,9 +219,9 @@ else null;
 end if;
 end process writerequest2;
 --write request synchronization for input buffer3
-writerequest3:process(datai3 (1 downto 0),wclk) is
+writerequest3:process(datai3 (1 downto 0),wclk,wr3) is
 begin 
-if rising_edge(wclk) then
+if (rising_edge(wclk) and wr3='1') then
 case datai3 (1 downto 0) is
 	when "00"=>
 		wrsync3<="1000";
@@ -243,9 +237,9 @@ else null;
 end if;
 end process writerequest3;
 --write request synchronization for input buffer4
-writerequest4:process(datai4 (1 downto 0),wclk) is
+writerequest4:process(datai4 (1 downto 0),wclk,wr4) is
 begin 
-if rising_edge(wclk) then
+if (rising_edge(wclk)and wr4='1') then
 case datai4 (1 downto 0) is
 	when "00"=>
 		wrsync4<="1000";
