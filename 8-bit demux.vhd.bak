@@ -12,7 +12,7 @@ end entity bit8demux;
 architecture behaviour of bit8demux is
  
 begin
-p:process
+p:process(En,sel,d_in)
 begin
 
 	if En='1' then

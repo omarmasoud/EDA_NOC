@@ -48,7 +48,7 @@ begin
 if wptr+1=rptr then
 	fu<='1';
 	em<='0';
-elsif rptr-1=wptr then
+elsif rptr=wptr then
 em<='1';
 fu<='0';
 else 

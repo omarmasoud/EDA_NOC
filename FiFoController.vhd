@@ -8,7 +8,7 @@ entity FiFoController is
 	write_valid,read_valid,empty,full:out std_logic;
 	wr_ptr,rd_ptr:out std_logic_vector(2 downto 0));
 end entity FiFoController;
-architecture behave of FiFoController is
+architecture mixed of FiFoController is
 component GreyCounter is
 generic(n:natural:=3);
 port ( en,rst:in std_logic;clk: in std_logic;
@@ -61,4 +61,4 @@ full<=fu;
 rv<=(not em) and r_req;
 wv<=(not fu)and w_req;
 
-end architecture behave;
+end architecture mixed;

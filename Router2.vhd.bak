@@ -38,9 +38,18 @@ component bit8demux is
 	sel:in std_logic_vector(1 downto 0);
 	En: in std_logic);
 end component bit8demux;
+type arr16 is array (15 downto 0) of std_logic_vector(7 downto 0);
+signal rrsync: std_logic_vector(3 downto 0);
 for all:Myregister use entity work.Myregister(reg);
 for all:bit8demux use entity work.bit8demux(behaviour);
 for all: fifo use entity work.fifo(Structural);
 for all:RoundRobinScheduler use entity work.RoundRobinScheduler(moorefsm);
 begin
+
+gen_fifo: for i in 15 downto 0 generate
+
+ fifo  
+port map(rst,rclk,wclk,rrsync);
+ end generate gen_fifo;
+
 end architecture mixed;

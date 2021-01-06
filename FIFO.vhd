@@ -22,7 +22,7 @@ component BlockRam is
 	addra,addrb:in std_logic_vector(2 downto 0));
 end component BlockRam;
 
-for fcontroller:FiFoController use entity work.FiFoController(behave);
+for fcontroller:FiFoController use entity work.FiFoController(mixed);
 for ram:BlockRam use entity work.BlockRam(behave);
 signal wv,rv,emp,fu:std_logic;
 signal addresswrite,adressread:std_logic_vector(2 downto 0);

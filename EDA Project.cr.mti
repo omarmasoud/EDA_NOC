@@ -48,7 +48,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading package NUMERIC_STD
 -- Compiling entity FiFoController
--- Compiling architecture behave of FiFoController
+-- Compiling architecture mixed of FiFoController
 -- Loading entity GreyCounter
 -- Loading entity graytobinary
 
@@ -133,14 +133,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
-} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity bit8demux
--- Compiling architecture behaviour of bit8demux
-
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -180,6 +172,17 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading entity fifo
 -- Loading entity RoundRobinScheduler
 
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity RoundRobinScheduler
+-- Compiling architecture moorefsm of RoundRobinScheduler
+
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/ay7aga.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/ay7aga.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -203,7 +206,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading entity FiFoController
 -- Loading entity BlockRam
 
-} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd}
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -214,50 +217,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity fifocontroltest
 -- Compiling architecture behave of fifocontroltest
 -- Loading entity FiFoController
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(13): (vcom-1133) Type mismatch found on port "reset".
-
-   In the component "FiFoController", the port type is "std.STANDARD.BIT".
-
-   In the entity "FiFoController", the port type is "ieee.std_logic_1164.STD_LOGIC"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(13): (vcom-1133) Type mismatch found on port "r_req".
-
-   In the component "FiFoController", the port type is "std.STANDARD.BIT".
-
-   In the entity "FiFoController", the port type is "ieee.std_logic_1164.STD_LOGIC"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(13): (vcom-1133) Type mismatch found on port "w_req".
-
-   In the component "FiFoController", the port type is "std.STANDARD.BIT".
-
-   In the entity "FiFoController", the port type is "ieee.std_logic_1164.STD_LOGIC"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(13): (vcom-1133) Type mismatch found on port "write_valid".
-
-   In the component "FiFoController", the port type is "std.STANDARD.BIT".
-
-   In the entity "FiFoController", the port type is "ieee.std_logic_1164.STD_LOGIC"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(13): (vcom-1133) Type mismatch found on port "read_valid".
-
-   In the component "FiFoController", the port type is "std.STANDARD.BIT".
-
-   In the entity "FiFoController", the port type is "ieee.std_logic_1164.STD_LOGIC"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(13): (vcom-1133) Type mismatch found on port "empty".
-
-   In the component "FiFoController", the port type is "std.STANDARD.BIT".
-
-   In the entity "FiFoController", the port type is "ieee.std_logic_1164.STD_LOGIC"
-
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(13): (vcom-1133) Type mismatch found on port "full".
-
-   In the component "FiFoController", the port type is "std.STANDARD.BIT".
-
-   In the entity "FiFoController", the port type is "ieee.std_logic_1164.STD_LOGIC"
-
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(31): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Error: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd(40): VHDL Compiler exiting
 
-} {12.0 13.0 18.0 19.0 24.0 25.0 30.0 31.0 36.0 37.0 42.0 43.0 48.0 49.0 56.0 57.0} {}}
+} {} {}}

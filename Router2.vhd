@@ -44,6 +44,7 @@ for all:Myregister use entity work.Myregister(reg);
 for all:bit8demux use entity work.bit8demux(behaviour);
 for all: fifo use entity work.fifo(Structural);
 for all:RoundRobinScheduler use entity work.RoundRobinScheduler(moorefsm);
+type wrsyncbit is array (3 downto 0)
 begin
 
 gen_fifo: for i in 15 downto 0 generate
@@ -51,5 +52,111 @@ gen_fifo: for i in 15 downto 0 generate
  fifo  
 port map(rst,rclk,wclk,rrsync);
  end generate gen_fifo;
+--processes beginining from here are used as the controller module logic
+readSynchronizerCS:process(rclk,rst) is
+begin
+if rst='1' then
+currentSchedulingState<=s3;
+elsif rising_edge(rclk) then
+currentSchedulingState<=nextSchedulingState;
+else null;
+end if;
+end process readSynchronizerCS;
+readSynchronizerNSandOP:process(currentSchedulingState) is
+begin
+
+case currentSchedulingState is
+	when s1=> 
+		rrsync<="1000";
+		nextSchedulingState<=s2;
+	
+	when s2=> 	
+		rrsync<="0100";
+		nextSchedulingState<=s3;
+	
+	when s3=> 
+		rrsync<="0010";
+		nextSchedulingState<=s4;
+	
+	when s4=> 
+		rrsync<="0001";
+		nextSchedulingState<=s1;
+		
+	when others=>
+		null;
+end case;
+
+end process readSynchronizerNSandOP;
+--write request synchronization for input buffer1
+writerequest1:process(datai1 (1 downto 0),wclk,wr1) is
+begin 
+if (rising_edge(wclk)and wr1='1') then
+case datai1 (1 downto 0) is
+	when "00"=>
+		wrsync1<="1000";
+	when "01"=>
+		wrsync1<="0100";
+	when "10"=>
+		wrsync1<="0010";
+	when "11"=>
+		wrsync1<="0001";
+	when others=> null;
+end case;
+else null;
+end if;
+end process writerequest1;
+--write request synchronization for input buffer2
+writerequest2:process(datai2 (1 downto 0),wclk,wr2) is
+begin 
+if (rising_edge(wclk) and wr2='1' )then
+case datai2 (1 downto 0) is
+	when "00"=>
+		wrsync2<="1000";
+	when "01"=>
+		wrsync2<="0100";
+	when "10"=>
+		wrsync2<="0010";
+	when "11"=>
+		wrsync2<="0001";
+	when others=> null;
+end case;
+else null;
+end if;
+end process writerequest2;
+--write request synchronization for input buffer3
+writerequest3:process(datai3 (1 downto 0),wclk,wr3) is
+begin 
+if (rising_edge(wclk) and wr3='1') then
+case datai3 (1 downto 0) is
+	when "00"=>
+		wrsync3<="1000";
+	when "01"=>
+		wrsync3<="0100";
+	when "10"=>
+		wrsync3<="0010";
+	when "11"=>
+		wrsync3<="0001";
+	when others=> null;
+end case;
+else null;
+end if;
+end process writerequest3;
+--write request synchronization for input buffer4
+writerequest4:process(datai4 (1 downto 0),wclk,wr4) is
+begin 
+if (rising_edge(wclk)and wr4='1') then
+case datai4 (1 downto 0) is
+	when "00"=>
+		wrsync4<="1000";
+	when "01"=>
+		wrsync4<="0100";
+	when "10"=>
+		wrsync4<="0010";
+	when "11"=>
+		wrsync4<="0001";
+	when others=> null;
+end case;
+else null;
+end if;
 
 end architecture mixed;

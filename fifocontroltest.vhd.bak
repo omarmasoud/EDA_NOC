@@ -6,13 +6,13 @@ entity fifocontroltest is
 end entity fifocontroltest;
 architecture behave of fifocontroltest is 
 component FiFoController is
-	port(reset:in bit;rdclk,wrclk:in std_logic;r_req,w_req:in bit;
-	write_valid,read_valid,empty,full:out bit;
+	port(reset:in std_logic;rdclk,wrclk:in std_logic;r_req,w_req:in std_logic;
+	write_valid,read_valid,empty,full:out std_logic;
 	wr_ptr,rd_ptr:out std_logic_vector(2 downto 0));
 end component FiFoController;
 for fc:FiFoController use entity work.FiFoController(behave);
-signal reset,r_req,w_req,write_valid,read_valid,empty,full :bit;
-signalrdclk,wrclk:std_logic;
+signal reset,r_req,w_req,write_valid,read_valid,empty,full :std_logic;
+signal rdclk,wrclk:std_logic;
 signal wr_ptr,rd_ptr: std_logic_vector(2 downto 0);
 begin
 fc:FiFoController port map(reset,rdclk,wrclk,r_req,w_req,write_valid,read_valid,empty,full,wr_ptr,rd_ptr);

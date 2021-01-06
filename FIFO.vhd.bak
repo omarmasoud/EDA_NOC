@@ -7,7 +7,7 @@ port(reset:in std_logic;rclk,wclk:in std_logic;rreq,wreq:in std_logic;
 	datain:in std_logic_vector(7 downto 0);dataout:out std_logic_vector(7 downto 0);
 	empty,full:out std_logic);
 end entity fifo;
-architecture behave of fifo is 
+architecture Structural of fifo is 
 component FiFoController is
 --generic(n:integer:=2);
 	port(reset:in std_logic;rdclk,wrclk:in std_logic;r_req,w_req:in std_logic;
@@ -33,4 +33,4 @@ ram:BlockRam port map(datain,output,wv,rv,wclk,rclk,addresswrite,adressread);
 dataout<=output;
 empty<=emp;
 full<=fu;
-end architecture behave;
+end architecture Structural;
