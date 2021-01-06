@@ -27,23 +27,19 @@ end process cs;
 ns:process(CurrentState)is
 begin
 case(CurrentState) is
-when s1=>NextState<=s2;
-when s2=>NextState<=s3;
-when s3=>NextState<=s4;
-when s4=>NextState<=s1;
+when s1=>
+	NextState<=s2;
+	dout<=din1;
+when s2=>
+	NextState<=s3;
+	dout<=din2;
+when s3=>
+	NextState<=s4;
+	dout<=din3;
+when s4=>
+	NextState<=s1;
+	dout<=din4;
 end case;
 end process ns;
-op:process(CurrentState)is
-begin
-case CurrentState is
-when s1=>
-dout<=din1;
-when s2=>
-dout<=din2;
-when s3=>
-dout<=din3;
-when s4=>
-dout<=din4;
-end case;
-end process op;
+
 end architecture moorefsm;

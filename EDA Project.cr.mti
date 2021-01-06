@@ -165,7 +165,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity BlockRam
 -- Compiling architecture behave of BlockRam
 
-} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd}
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -173,8 +173,22 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package NUMERIC_STD
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity RoundRobinScheduler
--- Compiling architecture moorefsm of RoundRobinScheduler
+-- Compiling entity Router
+-- Compiling architecture mixed of Router
+-- Loading entity Myregister
+-- Loading entity bit8demux
+-- Loading entity fifo
+-- Loading entity RoundRobinScheduler
+
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/ay7aga.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/ay7aga.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ay7aga
+-- Compiling architecture test of ay7aga
+-- Loading entity Myregister
+** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/ay7aga.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
