@@ -1,23 +1,4 @@
-{D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity routertest
--- Compiling architecture behave of routertest
--- Loading entity Router
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(68): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-
-} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd}
+{D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -103,8 +84,8 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity Myregister
--- Compiling architecture behave of Myregister
+-- Compiling entity bit8register
+-- Compiling architecture behave of bit8register
 
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -133,6 +114,36 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/testing.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/testing.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity tester
+-- Compiling architecture behave of tester
+-- Loading entity Router
+
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bit8demux
+-- Compiling architecture behaviour of bit8demux
+
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity BlockRam
+-- Compiling architecture behave of BlockRam
+
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -147,15 +158,16 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 ** Warning: D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd(29): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
-} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd}
+} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity BlockRam
--- Compiling architecture behave of BlockRam
+-- Compiling entity RoundRobinScheduler
+-- Compiling architecture moorefsm of RoundRobinScheduler
 
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -167,21 +179,10 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Router
 -- Compiling architecture mixed of Router
--- Loading entity Myregister
+-- Loading entity bit8register
 -- Loading entity bit8demux
 -- Loading entity fifo
 -- Loading entity RoundRobinScheduler
-
-} {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity RoundRobinScheduler
--- Compiling architecture moorefsm of RoundRobinScheduler
 
 } {} {}} {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/ay7aga.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/ay7aga.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015

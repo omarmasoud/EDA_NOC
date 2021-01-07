@@ -31,14 +31,14 @@ when s1=>
 	NextState<=s2;
 	dout<=din1;
 when s2=>
-NextState<=s3;
-dout<=din2;
+	NextState<=s3;
+	dout<=din2;
 when s3=>
-NextState<=s4;
-dout<=din3;
+	NextState<=s4;
+	dout<=din3;
 when s4=>
-NextState<=s1;
-dout<=din4;
+	NextState<=s1;
+	dout<=din4;
 end case;
 end process ns;
 

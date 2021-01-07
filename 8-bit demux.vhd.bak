@@ -17,10 +17,26 @@ begin
 
 	if En='1' then
 		case sel is
-			when"00"=>d_out1<=d_in;
-			when"01"=>d_out2<=d_in;
-			when"10"=>d_out3<=d_in;
-			when"11"=>d_out4<=d_in;
+			when"00"=>
+			d_out1<=d_in;
+			d_out2<=(others=>'0');
+			d_out3<=(others=>'0');
+			d_out4<=(others=>'0');
+			when"01"=>
+			d_out2<=d_in;
+			d_out1<=(others=>'0');
+			d_out3<=(others=>'0');
+			d_out4<=(others=>'0');
+			when"10"=>
+			d_out3<=d_in;
+			d_out2<=(others=>'0');
+			d_out1<=(others=>'0');
+			d_out4<=(others=>'0');
+			when"11"=>
+			d_out4<=d_in;
+			d_out2<=(others=>'0');
+			d_out3<=(others=>'0');
+			d_out1<=(others=>'0');
 			when others=> null;
 		end case;
 end if;

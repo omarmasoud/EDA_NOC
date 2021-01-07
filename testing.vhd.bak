@@ -1,12 +1,13 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 USE ieee.std_logic_unsigned.ALL;
 
 entity routertest is
-end entity routertest;
+end entity tester;
 
-architecture behave of routertest is
+architecture behave of tester is
 
 component Router is 
 port(datai1,datai2,datai3,datai4:in std_logic_vector(7 downto 0);
@@ -87,8 +88,7 @@ SEVERITY error;
 wait for 4 ns;
 
 
-ASSERT do1="00011100"
-REPORT "Problem with output from port 1 (First FIFO)"
+ASSERT do1="00011100" REPORT "Problem with output from port 1 (First FIFO)"
 SEVERITY error;
 
 wait for 4 ns;

@@ -94,7 +94,7 @@ R23
 R11
 R12
 Ebit8demux
-Z24 w1609936309
+Z24 w1610025379
 R1
 R2
 R3
@@ -106,9 +106,9 @@ VSW_^jYzBUOQlNGn_MZH6=2
 !s100 ofNRcQk<YSg]<K7BNTnY40
 R6
 32
-Z27 !s110 1609936313
+Z27 !s110 1610025385
 !i10b 1
-Z28 !s108 1609936313.000000
+Z28 !s108 1610025385.000000
 Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd|
 Z30 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bit demux.vhd|
 !i113 1
@@ -120,8 +120,8 @@ R2
 Z31 DEx4 work 9 bit8demux 0 22 SW_^jYzBUOQlNGn_MZH6=2
 l14
 L12
-V@=zJ5X@8Io9zjTzU@OK4=0
-!s100 5^S=:P>Z9^B]`3o=1n18?3
+VGL07HRhUJTK90Nc8_z^EA2
+!s100 3zPT=W9Okk_;jg]bj8QAg2
 R6
 32
 R27
@@ -132,39 +132,35 @@ R30
 !i113 1
 R11
 R12
-Eblockram
-Z32 w1609156694
-R15
-R16
+Ebit8register
+Z32 w1610028918
 R1
 R2
 R3
-Z33 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd
-Z34 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd
+Z33 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bitReg.vhd
+Z34 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bitReg.vhd
 l0
-L5
-VEYn?edAPd=@T8MA`>La5`0
-!s100 N1mEUdaQ?Q=:cmjCg]TkM0
+L3
+V9FBXlB3z;URoR35GEbc[D0
+!s100 ;2ca7al2j0YDPIW`Q5U3B1
 R6
 32
-Z35 !s110 1609692533
+Z35 !s110 1610028921
 !i10b 1
-Z36 !s108 1609692532.000000
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd|
-Z38 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd|
+Z36 !s108 1610028921.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bitReg.vhd|
+Z38 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bitReg.vhd|
 !i113 1
 R11
 R12
 Abehave
-R15
-R16
 R1
 R2
-Z39 DEx4 work 8 blockram 0 22 EYn?edAPd=@T8MA`>La5`0
+Z39 DEx4 work 12 bit8register 0 22 9FBXlB3z;URoR35GEbc[D0
 l14
-L11
-VNzm;jkA<0oNSh6@<oM5V^0
-!s100 OkT>>:UJIFm@NTES<F@O?3
+L12
+VI]N43Nh7JEfOb<B1?]GaK2
+!s100 A^>TT`L`lZDBF`49g@ONV0
 R6
 32
 R35
@@ -175,22 +171,65 @@ R38
 !i113 1
 R11
 R12
-Econvenc
-Z40 w1607624619
+Eblockram
+Z40 w1609156694
+R15
+R16
+R1
+R2
 R3
-Z41 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/jo.vhd
-Z42 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/jo.vhd
+Z41 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd
+Z42 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd
+l0
+L5
+VEYn?edAPd=@T8MA`>La5`0
+!s100 N1mEUdaQ?Q=:cmjCg]TkM0
+R6
+32
+Z43 !s110 1609692533
+!i10b 1
+Z44 !s108 1609692532.000000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd|
+Z46 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Ram.vhd|
+!i113 1
+R11
+R12
+Abehave
+R15
+R16
+R1
+R2
+Z47 DEx4 work 8 blockram 0 22 EYn?edAPd=@T8MA`>La5`0
+l14
+L11
+VNzm;jkA<0oNSh6@<oM5V^0
+!s100 OkT>>:UJIFm@NTES<F@O?3
+R6
+32
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R11
+R12
+Econvenc
+Z48 w1607624619
+R3
+Z49 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/jo.vhd
+Z50 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/jo.vhd
 l0
 L1
 VR8ZnCU]IRE>@kCbG7N0Ne0
 !s100 b7I_Km7z5[i1ThFC9PfBI2
 R6
 32
-Z43 !s110 1607624624
+Z51 !s110 1607624624
 !i10b 1
-Z44 !s108 1607624624.000000
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/jo.vhd|
-Z46 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/jo.vhd|
+Z52 !s108 1607624624.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/jo.vhd|
+Z54 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/jo.vhd|
 !i113 1
 R11
 R12
@@ -202,70 +241,70 @@ V?ae1FN9CUgT]5:j8iT?RX0
 !s100 KkU_UQ7N4N93Q9J7UmfVR2
 R6
 32
-R43
+R51
 !i10b 1
-R44
-R45
-R46
+R52
+R53
+R54
 !i113 1
 R11
 R12
 Efifo
-Z47 w1609936086
+Z55 w1609936086
 R17
 R15
 R16
 R1
 R2
 R3
-Z48 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd
-Z49 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd
+Z56 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd
+Z57 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd
 l0
 L5
 V5JHbN9^XzG2^imCeLXjA^3
 !s100 4oH2AccAGdz_]gn0Z5QSK1
 R6
 32
-Z50 !s110 1609936094
+Z58 !s110 1609936094
 !i10b 1
-Z51 !s108 1609936094.000000
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd|
-Z53 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd|
+Z59 !s108 1609936094.000000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd|
+Z61 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFO.vhd|
 !i113 1
 R11
 R12
 Astructural
-R39
-Z54 DEx4 work 14 fifocontroller 0 22 ]UiPZE_<]?i1REM[NaHiC0
+R47
+Z62 DEx4 work 14 fifocontroller 0 22 ]UiPZE_<]?i1REM[NaHiC0
 R17
 R15
 R16
 R1
 R2
-Z55 DEx4 work 4 fifo 0 22 5JHbN9^XzG2^imCeLXjA^3
+Z63 DEx4 work 4 fifo 0 22 5JHbN9^XzG2^imCeLXjA^3
 l30
 L10
 VH_dnAPcdTI<UCgCHf2TP32
 !s100 SlIIKP@D>[<<oFhIfVO[N3
 R6
 32
-R50
+R58
 !i10b 1
-R51
-R52
-R53
+R59
+R60
+R61
 !i113 1
 R11
 R12
 Abehave
-R39
-R54
+R47
+R62
 R17
 R15
 R16
 R1
 R2
-R55
+R63
 l30
 L10
 V3::6eSN=NO=RKEJ9ol[ZX0
@@ -275,109 +314,109 @@ R6
 !s110 1609159162
 !i10b 1
 !s108 1609159162.000000
-R52
-R53
+R60
+R61
 !i113 1
 R11
 R12
 w1609157041
 Efifocontroller
-Z56 w1609936057
+Z64 w1609936057
 R17
 R15
 R16
 R1
 R2
 R3
-Z57 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FiFoController.vhd
-Z58 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FiFoController.vhd
+Z65 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FiFoController.vhd
+Z66 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FiFoController.vhd
 l0
 L5
 V]UiPZE_<]?i1REM[NaHiC0
 !s100 CHA5AEEMZ;mTLcUhlJkOJ0
 R6
 32
-Z59 !s110 1609936063
+Z67 !s110 1609936063
 !i10b 1
-Z60 !s108 1609936063.000000
-Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FiFoController.vhd|
-Z62 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FiFoController.vhd|
+Z68 !s108 1609936063.000000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FiFoController.vhd|
+Z70 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FiFoController.vhd|
 !i113 1
 R11
 R12
 Amixed
-Z63 DEx4 work 12 graytobinary 0 22 01kR=8X9ZPLUgokSJHg[81
-Z64 DEx4 work 11 greycounter 0 22 0FUH]OMnCen=7=>KZh:nN3
+Z71 DEx4 work 12 graytobinary 0 22 01kR=8X9ZPLUgokSJHg[81
+Z72 DEx4 work 11 greycounter 0 22 0FUH]OMnCen=7=>KZh:nN3
 R17
 R15
 R16
 R1
 R2
-R54
+R62
 l36
 L11
 VX6O19moz;cFNW1IFF3M2D2
 !s100 ]zFi1LfDNol37>FR3cGW]3
 R6
 32
-R59
+R67
 !i10b 1
-R60
-R61
-R62
+R68
+R69
+R70
 !i113 1
 R11
 R12
 Abehave
-R63
-R64
+R71
+R72
 R17
 R15
 R16
 R1
 R2
-R54
+R62
 l36
 L11
 V1_AcXK?UBZ@AGhJE==hYV2
 !s100 Pfl7WbjO7[ZI7JOH_01Db1
 R6
 32
-R35
+R43
 !i10b 1
-Z65 !s108 1609692533.000000
-R61
-R62
+Z73 !s108 1609692533.000000
+R69
+R70
 !i113 1
 R11
 R12
 w1609688967
 Efifocontroltest
-Z66 w1609936160
+Z74 w1609936160
 R17
 R15
 R16
 R1
 R2
 R3
-Z67 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd
-Z68 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd
+Z75 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd
+Z76 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd
 l0
 L5
 VTGgWQf@_4jNUf0KSCOQXX1
 !s100 cVQCK?DlNYmjBza7TRkWn3
 R6
 32
-Z69 !s110 1609936164
+Z77 !s110 1609936164
 !i10b 1
-Z70 !s108 1609936164.000000
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd|
-Z72 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd|
+Z78 !s108 1609936164.000000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd|
+Z80 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/fifocontroltest.vhd|
 !i113 1
 R11
 R12
 Abehave
-R54
+R62
 R17
 R15
 R16
@@ -390,40 +429,40 @@ VH2f:>`dzF]claH:HF5]1m1
 !s100 TVeO4iGebmA0]kG7LihYj3
 R6
 32
-R69
+R77
 !i10b 1
-R70
-R71
-R72
+R78
+R79
+R80
 !i113 1
 R11
 R12
 Efifotest
-Z73 w1609527096
+Z81 w1609527096
 R17
 R15
 R16
 R1
 R2
 R3
-Z74 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd
-Z75 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd
+Z82 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd
+Z83 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd
 l0
 L7
 V5iM5JBU51f1glhIB=P=di0
 !s100 MbOH4W@B@87h[>G1T3K^U3
 R6
 32
-Z76 !s110 1609692535
+Z84 !s110 1609692535
 !i10b 1
-Z77 !s108 1609692535.000000
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd|
-Z79 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd|
+Z85 !s108 1609692535.000000
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd|
+Z87 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/FIFOTest.vhd|
 !i113 1
 R11
 R12
 Atesting
-R55
+R63
 R17
 R15
 R16
@@ -436,35 +475,35 @@ VR8@AdF6gMETkh3Q<b0BF^0
 !s100 <2gmOFMD^W5UC2GfmZH?z1
 R6
 32
-R76
+R84
 !i10b 1
-R77
-R78
-R79
+R85
+R86
+R87
 !i113 1
 R11
 R12
 Egraytobinary
-Z80 w1608920500
+Z88 w1608920500
 R15
 R16
 R17
 R1
 R2
 R3
-Z81 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/GreyTobinaryConverter.vhd
-Z82 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/GreyTobinaryConverter.vhd
+Z89 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/GreyTobinaryConverter.vhd
+Z90 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/GreyTobinaryConverter.vhd
 l0
 L7
 V01kR=8X9ZPLUgokSJHg[81
 !s100 UH_9^11^M6m[GHO1TTkLm1
 R6
 32
-R76
+R84
 !i10b 1
-R77
-Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/GreyTobinaryConverter.vhd|
-Z84 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/GreyTobinaryConverter.vhd|
+R85
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/GreyTobinaryConverter.vhd|
+Z92 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/GreyTobinaryConverter.vhd|
 !i113 1
 R11
 R12
@@ -474,42 +513,42 @@ R16
 R17
 R1
 R2
-R63
+R71
 l14
 L12
 VE52L=S35VkakY^FX9z1iO2
 !s100 ;E12`kSU[08eiecG2ljho1
 R6
 32
-R76
-!i10b 1
-R77
-R83
 R84
+!i10b 1
+R85
+R91
+R92
 !i113 1
 R11
 R12
 Egreycounter
-Z85 w1609286343
+Z93 w1609286343
 R15
 R16
 R17
 R1
 R2
 R3
-Z86 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd
-Z87 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd
+Z94 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd
+Z95 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd
 l0
 L5
 V0FUH]OMnCen=7=>KZh:nN3
 !s100 aRH@;E?VQ^EhJNe3PcIn<3
 R6
 32
-R35
+R43
 !i10b 1
-R65
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd|
-Z89 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd|
+R73
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd|
+Z97 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/greycounter.vhd|
 !i113 1
 R11
 R12
@@ -519,47 +558,47 @@ R16
 R17
 R1
 R2
-R64
+R72
 l13
 L10
 Vn86faV3:hFjd7^Kd1=b_V0
 !s100 [=dMag38?Jad`7^cYX2hR0
 R6
 32
-R35
+R43
 !i10b 1
-R65
-R88
-R89
+R73
+R96
+R97
 !i113 1
 R11
 R12
 Emycounter
-Z90 w1608899494
+Z98 w1608899494
 R15
 R16
 R17
 R1
 R2
 R3
-Z91 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counter.vhd
-Z92 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counter.vhd
+Z99 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counter.vhd
+Z100 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counter.vhd
 l0
 L8
 V7:o:cj;NJW9l<M=33>;1T0
 !s100 _b]41mXYDOeSnLc5WQ:j]2
 R6
 32
-R76
+R84
 !i10b 1
-R77
-Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counter.vhd|
-Z94 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counter.vhd|
+R85
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counter.vhd|
+Z102 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counter.vhd|
 !i113 1
 R11
 R12
 Abehave
-R63
+R71
 DEx4 work 11 greycounter 0 22 iTnOHd^fOS1W73a8W2DCd0
 R15
 R16
@@ -576,29 +615,29 @@ R6
 !s110 1608901398
 !i10b 1
 !s108 1608901398.000000
-R93
-R94
+R101
+R102
 !i113 1
 R11
 R12
 Emyregister
-Z95 w1609887583
+Z103 w1609887583
 R1
 R2
 R3
-Z96 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bitReg.vhd
-Z97 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bitReg.vhd
+R33
+R34
 l0
 L3
 VjhbhWF1gbjjoG3na]i3>;0
 !s100 bkTP:U=A:?eZKjizek=DA1
 R6
 32
-Z98 !s110 1609887586
+Z104 !s110 1609887586
 !i10b 1
-Z99 !s108 1609887586.000000
-Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bitReg.vhd|
-Z101 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/8-bitReg.vhd|
+Z105 !s108 1609887586.000000
+R37
+R38
 !i113 1
 R11
 R12
@@ -612,11 +651,11 @@ VfjcY42OS`M4j6`?Dal@_[2
 !s100 RYdMVo1Gn_dJLP>Foe4m_2
 R6
 32
-R98
+R104
 !i10b 1
-R99
-R100
-R101
+R105
+R37
+R38
 !i113 1
 R11
 R12
@@ -630,36 +669,36 @@ V<ZToc[Tah`XSFchB=;;4M3
 !s100 Xlmk:;6zV232cdXMba<>j2
 R6
 32
-Z102 !s110 1609692532
+Z106 !s110 1609692532
 !i10b 1
-R36
-R100
-R101
+R44
+R37
+R38
 !i113 1
 R11
 R12
 w1609156796
 Emytest
-Z103 w1608336974
+Z107 w1608336974
 R17
 R15
 R16
 R1
 R2
 R3
-R67
-R68
+R75
+R76
 l0
 L5
 VX2H2f`jd1@NT<dFZ7bMA?3
 !s100 Wd4bjN@Sze^G1BBDH:m4<1
 R6
 32
-Z104 !s110 1608336980
+Z108 !s110 1608336980
 !i10b 1
-Z105 !s108 1608336980.000000
-R71
-R72
+Z109 !s108 1608336980.000000
+R79
+R80
 !i113 1
 R11
 R12
@@ -677,39 +716,39 @@ Vg6QlS[hfa8Ye2CB>1PXeR1
 !s100 OA^M?o2n4C4TlgMlB8;8E0
 R6
 32
-R104
+R108
 !i10b 1
-R105
-R71
-R72
+R109
+R79
+R80
 !i113 1
 R11
 R12
 Eramtest
-Z106 w1609156637
+Z110 w1609156637
 R15
 R16
 R1
 R2
 R3
-Z107 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RamTest.vhd
-Z108 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RamTest.vhd
+Z111 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RamTest.vhd
+Z112 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RamTest.vhd
 l0
 L6
 VD66zK5?P2;F760JLPM6<e1
 !s100 J@b4b0GRE`ZlI<TgXUKVW3
 R6
 32
-R76
+R84
 !i10b 1
-R77
-Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RamTest.vhd|
-Z110 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RamTest.vhd|
+R85
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RamTest.vhd|
+Z114 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RamTest.vhd|
 !i113 1
 R11
 R12
 Abehave
-R39
+R47
 R15
 R16
 R1
@@ -721,35 +760,35 @@ Vzd6oj?Y1@==UU7_ngW4LH0
 !s100 2`[gB@`595`4<YSolN17g3
 R6
 32
-R76
+R84
 !i10b 1
-R77
-R109
-R110
+R85
+R113
+R114
 !i113 1
 R11
 R12
 Eroundrobinscheduler
-Z111 w1609890386
+Z115 w1610023557
 R15
 R16
 R17
 R1
 R2
 R3
-Z112 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd
-Z113 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd
+Z116 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd
+Z117 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd
 l0
 L5
 V@FHJ[QcaDJlmg3R5k^LhM1
 !s100 WeX62@QCAE;;GE?jP:JTN0
 R6
 32
-Z114 !s110 1609891085
+Z118 !s110 1610030707
 !i10b 1
-Z115 !s108 1609891085.000000
-Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd|
-Z117 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd|
+Z119 !s108 1610030707.000000
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd|
+Z121 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RoundRobinScheduler.vhd|
 !i113 1
 R11
 R12
@@ -759,18 +798,18 @@ R16
 R17
 R1
 R2
-Z118 DEx4 work 19 roundrobinscheduler 0 22 @FHJ[QcaDJlmg3R5k^LhM1
+Z122 DEx4 work 19 roundrobinscheduler 0 22 @FHJ[QcaDJlmg3R5k^LhM1
 l16
 L12
-Va:J7T7KDkD0n68Y^ojD;W1
-!s100 >MY60oQWl`O38U>XoNWD:0
+Z123 VIAzjN>fL5jY4S0EWQCZ^]3
+Z124 !s100 RhYVYfm;RQCVL<6^RknaS2
 R6
 32
-R114
+R118
 !i10b 1
-R115
-R116
-R117
+R119
+R120
+R121
 !i113 1
 R11
 R12
@@ -780,7 +819,7 @@ R16
 R17
 R1
 R2
-R118
+R122
 l16
 L12
 VBI;L?8I24W:A3l@YST;LP1
@@ -790,64 +829,64 @@ R6
 !s110 1609806271
 !i10b 1
 !s108 1609806271.000000
-R116
-R117
+R120
+R121
 !i113 1
 R11
 R12
 w1609806268
 Erouter
-Z119 w1609887600
+Z125 w1610029168
 R15
 R16
 R17
 R1
 R2
 R3
-Z120 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd
-Z121 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd
+Z126 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd
+Z127 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd
 l0
 L5
 VUfT?Md:5_bJQ7Y<m_><TD0
 !s100 <AC4BInK2Q5aZb2LnaTSj2
 R6
 32
-Z122 !s110 1609887605
+Z128 !s110 1610029172
 !i10b 1
-Z123 !s108 1609887605.000000
-Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd|
-Z125 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd|
+Z129 !s108 1610029172.000000
+Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd|
+Z131 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/Router.vhd|
 !i113 1
 R11
 R12
 Amixed
-R118
-R55
+R122
+R63
 R31
-R13
+R39
 R15
 R16
 R17
 R1
 R2
-Z126 DEx4 work 6 router 0 22 UfT?Md:5_bJQ7Y<m_><TD0
+Z132 DEx4 work 6 router 0 22 UfT?Md:5_bJQ7Y<m_><TD0
 l72
 L10
-VXLC=KGnG_]Am`LZ4;2jKm0
-!s100 X@eU0jeoKcJ^3fkPSoh:N0
+VE?9O5]oiTJci^XmnhI`[<3
+!s100 h]S;J[;_5;m1KGfG^Vh=m2
 R6
 32
-R122
+R128
 !i10b 1
-R123
-R124
-R125
+R129
+R130
+R131
 !i113 1
 R11
 R12
 Abehave
-R118
-R55
+R122
+R63
 R31
 R13
 R15
@@ -865,84 +904,84 @@ R6
 !s110 1609511255
 !i10b 1
 !s108 1609511254.000000
-R124
-R125
+R130
+R131
 !i113 1
 R11
 R12
 w1609511178
 Eroutertest
-Z127 w1609893329
+Z133 w1610024011
 R15
 R16
 R17
 R1
 R2
 R3
-Z128 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd
-Z129 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd
+Z134 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd
+Z135 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd
 l0
-L5
-VTm@ZS2aCG4CJldUfXlUG20
-!s100 Q_zbQY=mR4NWdz>[e2[203
+L6
+VlPl9hT?fGUNJi6>ezVU4I0
+!s100 B`h35jILGE3SYBYjgDEQ23
 R6
 32
-Z130 !s110 1609893335
+!s110 1610024018
 !i10b 1
-Z131 !s108 1609893334.000000
-Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd|
-Z133 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd|
+Z136 !s108 1610024018.000000
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd|
+Z138 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/routertb.vhd|
 !i113 1
 R11
 R12
 Abehave
-R126
+R132
 R15
 R16
 R17
 R1
 R2
-DEx4 work 10 routertest 0 22 Tm@ZS2aCG4CJldUfXlUG20
-l19
-L7
-V3cJQNXFV`i<D3d1zdjSl_2
-!s100 XnUfgf]O6:OT[hW=;bd7n1
+DEx4 work 10 routertest 0 22 lPl9hT?fGUNJi6>ezVU4I0
+l24
+L9
+VD415mX@B_U]=c;DVzF`1e2
+!s100 IVzcS3R52P?i^h>=20;o51
 R6
 32
-R130
+!s110 1610024019
 !i10b 1
-R131
-R132
-R133
+R136
+R137
+R138
 !i113 1
 R11
 R12
 Errtest
-Z134 w1609858543
+Z139 w1609858543
 R15
 R16
 R17
 R1
 R2
 R3
-Z135 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd
-Z136 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd
+Z140 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd
+Z141 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd
 l0
 L5
 V<?GD:bcg_`3d2d7I^E@dO0
 !s100 D71SQN>?f4hNQZA=YS8YZ3
 R6
 32
-Z137 !s110 1609858549
+Z142 !s110 1609858549
 !i10b 1
-Z138 !s108 1609858549.000000
-Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd|
-Z140 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd|
+Z143 !s108 1609858549.000000
+Z144 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd|
+Z145 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/RRTest.vhd|
 !i113 1
 R11
 R12
 Atester
-R118
+R122
 R15
 R16
 R17
@@ -955,40 +994,86 @@ VT<N<aFK7jGh9Ql7XfYH7f3
 !s100 WXLE[dk?kRGUKe:^HUC[W0
 R6
 32
-R137
+R142
 !i10b 1
-R138
-R139
-R140
+R143
+R144
+R145
 !i113 1
 R11
 R12
-Etesting
-Z141 w1609156858
+Etester
+Z146 w1610024882
+R15
+R16
 R17
 R1
 R2
 R3
-Z142 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd
-Z143 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd
+Z147 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/testing.vhd
+Z148 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/testing.vhd
+l0
+L7
+Vn=_6_o[AeY]3zfgBoBL];1
+!s100 4J@@CF9Gm=1mSAIN_UfjO3
+R6
+32
+Z149 !s110 1610024885
+!i10b 1
+Z150 !s108 1610024885.000000
+Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/testing.vhd|
+Z152 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/testing.vhd|
+!i113 1
+R11
+R12
+Abehave
+R132
+R15
+R16
+R17
+R1
+R2
+DEx4 work 6 tester 0 22 n=_6_o[AeY]3zfgBoBL];1
+l25
+L10
+Vz`ak`lBSZDc4=6hLOE_af0
+!s100 Y0IhaL9AabOI3Ta<ibdz20
+R6
+32
+R149
+!i10b 1
+R150
+R151
+R152
+!i113 1
+R11
+R12
+Etesting
+Z153 w1609156858
+R17
+R1
+R2
+R3
+Z154 8D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd
+Z155 FD:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd
 l0
 L4
 Va>[3GQ:c9Rn^g10:_IM7V3
 !s100 >X7WfnhBfR@P]CH@UmBLe1
 R6
 32
-R102
+R106
 !i10b 1
-R36
-Z144 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd|
-Z145 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd|
+R44
+Z156 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd|
+Z157 !s107 D:/UNI/junior/semster 1/CSE312 Electronic Design Automation/New folder/counterTest.vhd|
 !i113 1
 R11
 R12
 Abehave
 R15
 R16
-R64
+R72
 R17
 R1
 R2
@@ -999,11 +1084,11 @@ Vj4S:1Lcgcg@Ani<gMGXIf1
 !s100 >gHz@<30Fnd`SX5X^5e<J1
 R6
 32
-R102
+R106
 !i10b 1
-R36
-R144
-R145
+R44
+R156
+R157
 !i113 1
 R11
 R12

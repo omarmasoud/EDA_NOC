@@ -8,14 +8,14 @@ port(datai1,datai2,datai3,datai4:in std_logic_vector(7 downto 0);
 	wr1,wr2,wr3,wr4,rst,wclk,rclk:in std_logic);
 end entity Router;
 architecture mixed of Router is 
-component Myregister is 
+component bit8register is 
 	generic(n:natural:=8);
 	port(dataIn: in std_logic_vector(n-1 downto 0);
 	clock:in std_logic;
 	dataOut:out std_logic_vector(n-1 downto 0);
 	clock_en:in std_logic;
 	reset:in std_logic);
-end component Myregister;
+end component bit8register;
 component RoundRobinScheduler is 
 	port(
 	reset:in std_logic;
@@ -37,7 +37,7 @@ component bit8demux is
 	sel:in std_logic_vector(1 downto 0);
 	En: in std_logic);
 end component bit8demux;
-for all:Myregister use entity work.Myregister(behave);
+for all:bit8register use entity work.bit8register(behave);
 for all:bit8demux use entity work.bit8demux(behaviour);
 for all: fifo use entity work.fifo(Structural);
 for all:RoundRobinScheduler use entity work.RoundRobinScheduler(moorefsm);
@@ -71,15 +71,15 @@ signal wr_1,wr_2,wr_3,wr_4,wr_5,wr_6,wr_7,wr_8,wr_9,wr_10,wr_11,wr_12,wr_13,wr_1
 --signals for 
 begin
 --input buffers
-buff1: Myregister generic map(8) port map(datai1,wclk,buffo1,wr1,rst);
-buff2: Myregister generic map(8) port map(datai2,wclk,buffo2,wr2,rst);
-buff3: Myregister generic map(8) port map(datai3,wclk,buffo3,wr3,rst);
-buff4: Myregister generic map(8) port map(datai4,wclk,buffo4,wr4,rst);
+buff1: bit8register generic map(8) port map(datai1,wclk,buffo1,wr1,rst);
+buff2: bit8register generic map(8) port map(datai2,wclk,buffo2,wr2,rst);
+buff3: bit8register generic map(8) port map(datai3,wclk,buffo3,wr3,rst);
+buff4: bit8register generic map(8) port map(datai4,wclk,buffo4,wr4,rst);
 --switch fabrics;
 dem1:bit8demux port map(buffo1,dem1o1,dem1o2,dem1o3,dem1o4,buffo1(1 downto 0),wr1);
-dem2:bit8demux port map(buffo2,dem2o1,dem2o2,dem2o3,dem2o4,buffo2(1 downto 0),wr1);
-dem3:bit8demux port map(buffo3,dem3o1,dem3o2,dem3o3,dem3o4,buffo3(1 downto 0),wr1);
-dem4:bit8demux port map(buffo4,dem4o1,dem4o2,dem4o3,dem4o4,buffo4(1 downto 0),wr1);
+dem2:bit8demux port map(buffo2,dem2o1,dem2o2,dem2o3,dem2o4,buffo2(1 downto 0),wr2);
+dem3:bit8demux port map(buffo3,dem3o1,dem3o2,dem3o3,dem3o4,buffo3(1 downto 0),wr3);
+dem4:bit8demux port map(buffo4,dem4o1,dem4o2,dem4o3,dem4o4,buffo4(1 downto 0),wr4);
 --read request signals assignment statements
 rr1<=(not em1) and rrsync(2);
 rr2<=(not em2) and rrsync(1);
@@ -157,31 +157,46 @@ currentSchedulingState<=nextSchedulingState;
 else null;
 end if;
 end process readSynchronizerCS;
-readSynchronizerNSandOP:process(currentSchedulingState) is
+readSynchronizerNS:process(currentSchedulingState) is
 begin
 
 case currentSchedulingState is
 	when s1=> 
-		rrsync<="1000";
 		nextSchedulingState<=s2;
 	
 	when s2=> 	
-		rrsync<="0100";
 		nextSchedulingState<=s3;
 	
 	when s3=> 
-		rrsync<="0010";
 		nextSchedulingState<=s4;
 	
 	when s4=> 
-		rrsync<="0001";
+	
 		nextSchedulingState<=s1;
 		
 	when others=>
 		null;
 end case;
+end process readSynchronizerNS;
 
-end process readSynchronizerNSandOP;
+readSynchronizerOP:process(currentSchedulingState) is
+begin
+
+case currentSchedulingState is
+	when s1=> 
+		rrsync<="1000";
+	
+	when s2=> 	
+		rrsync<="0100";
+	
+	when s3=> 
+		rrsync<="0010";
+	when s4=> 
+		rrsync<="0001";
+	when others=>
+		null;
+end case;
+end process readSynchronizerOP;
 --write request synchronization for input buffer1
 writerequest1:process(datai1 (1 downto 0),wclk,wr1) is
 begin 

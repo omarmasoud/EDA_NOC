@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-entity Myregister is 
+entity bit8register is 
 
 	generic(n:natural:=8);
 	port(dataIn: in std_logic_vector(n-1 downto 0);
@@ -8,8 +8,8 @@ entity Myregister is
 	dataOut:out std_logic_vector(n-1 downto 0);
 	clock_en:in std_logic;
 	reset:in std_logic);
-end entity Myregister;
-architecture behave of Myregister is
+end entity bit8register;
+architecture behave of bit8register is
 signal temp:std_logic_vector(n-1 downto 0);
 begin
 p1:process(clock,reset)
