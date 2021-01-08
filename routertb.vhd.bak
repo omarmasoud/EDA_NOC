@@ -87,8 +87,7 @@ SEVERITY error;
 wait for 4 ns;
 
 
-ASSERT do1="00011100"
-REPORT "Problem with output from port 1 (First FIFO)"
+ASSERT do1="00011100" REPORT "Problem with output from port 1 (First FIFO)"
 SEVERITY error;
 
 wait for 4 ns;

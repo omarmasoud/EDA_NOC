@@ -22,15 +22,30 @@ component BlockRam is
 	addra,addrb:in std_logic_vector(2 downto 0));
 end component BlockRam;
 
-for fcontroller:FiFoController use entity work.FiFoController(behave);
+for fcontroller:FiFoController use entity work.FiFoController(mixed);
 for ram:BlockRam use entity work.BlockRam(behave);
 signal wv,rv,emp,fu:std_logic;
 signal addresswrite,adressread:std_logic_vector(2 downto 0);
-signal output:std_logic_vector(7 downto 0);
+signal output,outputmodifier:std_logic_vector(7 downto 0);
+signal isemp:std_logic:='0';
 begin
 fcontroller:FiFoController  port map(reset,rclk,wclk,rreq,wreq,wv,rv,emp,fu,addresswrite,adressread);
 ram:BlockRam port map(datain,output,wv,rv,wclk,rclk,addresswrite,adressread);
-dataout<=output;
+dataout<=outputmodifier;
 empty<=emp;
 full<=fu;
+emptyoutput:process(emp)is
+begin
+if (emp='1' and isemp='1')
+then outputmodifier<=(others=>'X');
+
+elsif  (emp='1' and isemp='0' )then
+outputmodifier<=output;
+isemp<='1';
+elsif emp='0' then
+isemp<='1';
+
+
+end if;
+end process emptyoutput;
 end architecture Structural;

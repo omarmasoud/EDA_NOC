@@ -5,7 +5,7 @@ USE ieee.std_logic_unsigned.ALL;
 entity BlockRam is 
 	port(din:in std_logic_vector(7 downto 0);
 	dout:out std_logic_vector(7 downto 0);
- 	wea,rea:in bit;clka,clkb:in std_logic;
+ 	wea,rea:in std_logic;clka,clkb:in std_logic;
 	addra,addrb:in std_logic_vector(2 downto 0));
 end entity BlockRam;
 architecture behave of BlockRam is
@@ -30,6 +30,6 @@ Begin
 			else null;
 			end if;
 		end if;
-			
 	end process rd;
+reset:
 end architecture behave;

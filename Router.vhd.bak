@@ -98,22 +98,22 @@ rr14<=(not em14) and rrsync(1);
 rr15<=(not em15) and rrsync(0);
 rr16<=(not em16) and rrsync(3);
 --write request signal assignment statements
-wr_1<=( not fu1) and wrsync1(3);
-wr_2<=( not fu2 )and wrsync2(3);
-wr_3<=( not fu3 )and wrsync3(3);
-wr_4<=( not fu4 )and wrsync4(3);
-wr_5<=( not fu5 )and wrsync1(2);
-wr_6<=( not fu6 )and wrsync2(2);
-wr_7<=( not fu7 )and wrsync3(2);
-wr_8<=( not fu8 )and wrsync4(2);
-wr_9<=( not fu9 )and wrsync1(1);
-wr_10<=( not fu10) and wrsync2(1);
-wr_11<=( not fu11) and wrsync3(1);
-wr_12<=( not fu12) and wrsync4(1);
-wr_13<= (not fu13) and wrsync1(0);
-wr_14<= (not fu14) and wrsync2(0);
-wr_15<= (not fu15) and wrsync3(0);
-wr_16<= (not fu16) and wrsync4(0);
+wr_1<=( not fu1) and wrsync1(3)and (not rst);
+wr_2<=( not fu2 )and wrsync2(3)and (not rst);
+wr_3<=( not fu3 )and wrsync3(3)and (not rst);
+wr_4<=( not fu4 )and wrsync4(3)and (not rst);
+wr_5<=( not fu5 )and wrsync1(2)and (not rst);
+wr_6<=( not fu6 )and wrsync2(2)and (not rst);
+wr_7<=( not fu7 )and wrsync3(2)and (not rst);
+wr_8<=( not fu8 )and wrsync4(2)and (not rst);
+wr_9<=( not fu9 )and wrsync1(1)and (not rst);
+wr_10<=( not fu10) and wrsync2(1)and (not rst);
+wr_11<=( not fu11) and wrsync3(1)and (not rst);
+wr_12<=( not fu12) and wrsync4(1)and (not rst);
+wr_13<= (not fu13) and wrsync1(0)and (not rst);
+wr_14<= (not fu14) and wrsync2(0)and (not rst);
+wr_15<= (not fu15) and wrsync3(0)and (not rst);
+wr_16<= (not fu16) and wrsync4(0) and (not rst);
 
 --fifo reference port for port mapping component fifo is 
 --port(reset:in std_logic;rclk,wclk:in std_logic;rreq,wreq:in std_logic;

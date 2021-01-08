@@ -19,26 +19,30 @@ begin
 		case sel is
 			when"00"=>
 			d_out1<=d_in;
-			d_out2<=(others=>'0');
-			d_out3<=(others=>'0');
-			d_out4<=(others=>'0');
+			d_out2<=(others=>'X');
+			d_out3<=(others=>'X');
+			d_out4<=(others=>'X');
 			when"01"=>
 			d_out2<=d_in;
-			d_out1<=(others=>'0');
-			d_out3<=(others=>'0');
-			d_out4<=(others=>'0');
+			d_out1<=(others=>'X');
+			d_out3<=(others=>'X');
+			d_out4<=(others=>'X');
 			when"10"=>
 			d_out3<=d_in;
-			d_out2<=(others=>'0');
-			d_out1<=(others=>'0');
-			d_out4<=(others=>'0');
+			d_out2<=(others=>'X');
+			d_out1<=(others=>'X');
+			d_out4<=(others=>'X');
 			when"11"=>
 			d_out4<=d_in;
-			d_out2<=(others=>'0');
-			d_out3<=(others=>'0');
-			d_out1<=(others=>'0');
+			d_out2<=(others=>'X');
+			d_out3<=(others=>'X');
+			d_out1<=(others=>'X');
 			when others=> null;
 		end case;
+		else	 d_out1<=(others=>'X');
+			d_out2<=(others=>'X');
+			d_out3<=(others=>'X');
+			d_out4<=(others=>'X');
 end if;
 
 

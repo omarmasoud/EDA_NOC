@@ -30,6 +30,6 @@ Begin
 			else null;
 			end if;
 		end if;
-			
 	end process rd;
+
 end architecture behave;
